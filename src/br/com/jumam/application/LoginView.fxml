@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="200.0" minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jumam.application.LoginViewController">
+   <children>
+      <Label layoutX="88.0" layoutY="47.0" text="Usuário:" />
+      <Label layoutX="88.0" layoutY="84.0" text="Senha:" />
+      <TextField layoutX="136.0" layoutY="43.0" minWidth="200.0" promptText="Digite o Usuário" />
+      <PasswordField layoutX="136.0" layoutY="80.0" minWidth="200.0" promptText="Digite a Senha" />
+      <Button layoutX="153.0" layoutY="124.0" minWidth="75.0" mnemonicParsing="false" text="Logar" />
+      <Button layoutX="250.0" layoutY="124.0" minWidth="75.0" mnemonicParsing="false" onAction="#handleCancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

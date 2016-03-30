@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jumam.application.MainAppController">
-	<!-- TODO Add Nodes -->
+
+<BorderPane minHeight="640.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jumam.application.MainAppController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="insere" mnemonicParsing="false" text="Inserir" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleFechar" text="Sair" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Editar" />
+                  <MenuItem mnemonicParsing="false" text="Imprimir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
