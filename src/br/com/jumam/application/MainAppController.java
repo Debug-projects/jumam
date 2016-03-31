@@ -22,6 +22,6 @@ public class MainAppController {
     
     @FXML
     private void handleFechar(){
-		Main.primaryStage.close();
+		Main.stageRoot.close();
     }
 }

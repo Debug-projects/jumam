@@ -21,11 +21,13 @@ public class LoginViewController {
 	
 	@FXML
 	private void handleCancelar(){
-		Main.primaryStage.close();
+		Main.stageLogin.close();		
 	}
 	
 	@FXML
 	private void handleLogar(){
-		
+		Main.stageLogin.close();
+		Main.rootLayout();
+		Main.process();
 	}
 }

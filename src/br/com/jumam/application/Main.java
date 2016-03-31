@@ -1,5 +1,6 @@
 package br.com.jumam.application;
 	
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -10,35 +11,58 @@ import javafx.fxml.FXMLLoader;
 
 public class Main extends Application {
 	
-	
-	private BorderPane root;
-	public static Stage primaryStage;
+	public static Stage stageLogin;
+	public static Stage stageRoot;
+	private static BorderPane root;
 	
 	
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage primaryStage) {		
+		login(primaryStage);		
+	}
+	
+	public static void rootLayout() {
 		try {
-			this.root = (BorderPane)FXMLLoader.load(getClass().getResource("MainApp.fxml"));
-			Scene scene = new Scene(root,800,640);
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("MainApp.fxml"));
+			root = (BorderPane)loader.load();
+			Scene scene = new Scene(root,1024,640);			
+			stageRoot = new Stage();
+			stageRoot.setTitle("JUMAM");
+			stageRoot.setResizable(false);
+			stageRoot.setScene(scene);
+			stageRoot.show();
 			
-			Main.primaryStage = primaryStage;
-			Main.primaryStage.setTitle("JUMAM");
-			Main.primaryStage.setResizable(false);
-			Main.primaryStage.setScene(scene);
-			Main.primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		login();
-		
 	}
 	
-	private void login() {
+	private void login(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("LoginView.fxml"));
 			AnchorPane login = (AnchorPane)loader.load();
-			root.setCenter(login);
+			Scene sceneLogin = new Scene(login,400,200);
+			stageLogin = primaryStage;
+			stageLogin.setTitle("Login");
+			stageLogin.setResizable(false);
+			stageLogin.setScene(sceneLogin);
+			stageLogin.show();
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void process(){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("ProcessView.fxml"));
+			AnchorPane process = (AnchorPane)loader.load();
+			root.setCenter(process);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -47,6 +71,5 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-
 	
 }
