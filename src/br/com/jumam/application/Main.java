@@ -89,8 +89,27 @@ public class Main extends Application {
 	public static void inserir() {
 		entry();
 		try {
+			EntryViewController controller = new EntryViewController();
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(EntryViewController.class.getResource("EntryView.fxml"));
+			loader.setController(controller);
+			AnchorPane inserir = (AnchorPane)loader.load();
+			stageEntry.setTitle("Inserir");
+			rootEntry.setCenter(inserir);
+						
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void corrigir() {
+		entry();
+		try {
+			EditViewController controller = new EditViewController();
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(EntryViewController.class.getResource("EntryView.fxml"));
+			loader.setController(controller);
 			AnchorPane inserir = (AnchorPane)loader.load();
 			stageEntry.setTitle("Inserir");
 			rootEntry.setCenter(inserir);
