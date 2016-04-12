@@ -24,4 +24,9 @@ public class MainAppController {
     private void handleFechar(){
 		Main.stageRoot.close();
     }
+    
+    @FXML
+    private void handleNovo(){
+    	Main.inserir();
+    }
 }

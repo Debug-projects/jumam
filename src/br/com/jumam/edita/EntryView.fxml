@@ -7,198 +7,208 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jumam.edita.EntryViewController">
+<AnchorPane prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jumam.edita.EntryViewController">
 	<children>
-		<GridPane alignment="CENTER" prefWidth="542.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
-			<columnConstraints>
-				<ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
-				<ColumnConstraints hgrow="SOMETIMES" maxWidth="456.0" minWidth="10.0" prefWidth="329.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="456.0" minWidth="10.0" prefWidth="113.0" />
-			</columnConstraints>
-			<rowConstraints>
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-				<RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
-			</rowConstraints>
-			<children>
-				<Label text="Demandante" GridPane.columnSpan="2">
-					<font>
-						<Font name="System Bold Italic" size="12.0" />
-					</font>
-					<GridPane.margin>
-						<Insets left="10.0" />
-					</GridPane.margin>
-				</Label>
-				<Label text="Nome:" GridPane.rowIndex="1" />
-				<Label text="Endereço:" GridPane.rowIndex="2" />
-				<Label text="CEP:" GridPane.rowIndex="3" />
-				<Label text="Bairro:" GridPane.rowIndex="4" />
-				<Label text="Cidade/UF:" GridPane.rowIndex="5" />
-				<Label text="CPF/CNPJ:" GridPane.rowIndex="6" />
-				<Label text="Representante:" GridPane.rowIndex="7" />
-				<Label text="Nacionalidade:" GridPane.rowIndex="8" />
-				<Label text="Naturalidade:" GridPane.rowIndex="9" />
-				<Label text="Estado Civil:" GridPane.rowIndex="10" />
-				<Label text="RG:" GridPane.rowIndex="11" />
-				<Label text="CPF:" GridPane.rowIndex="12" />
-				<Label text="Telefone:" GridPane.rowIndex="13" />
-				<Label text="Demandado" GridPane.columnSpan="2" GridPane.rowIndex="14">
-					<font>
-						<Font name="System Bold Italic" size="12.0" />
-					</font>
-					<GridPane.margin>
-						<Insets left="10.0" />
-					</GridPane.margin>
-				</Label>
-				<Label text="Nome:" GridPane.rowIndex="15" />
-				<Label text="Nacionalidade:" GridPane.rowIndex="16" />
-				<Label text="Naturalidade:" GridPane.rowIndex="17" />
-				<Label text="Estado Civil:" GridPane.rowIndex="18" />
-				<Label text="Profisão:" GridPane.rowIndex="19" />
-				<Label text="RG:" GridPane.rowIndex="20" />
-				<Label text="CPF:" GridPane.rowIndex="21" />
-				<Label text="Endereço:" GridPane.rowIndex="22" />
-				<Label text="CEP:" GridPane.rowIndex="23" />
-				<Label text="Bairro:" GridPane.rowIndex="24" />
-				<Label text="Telefone:" GridPane.rowIndex="25" />
-				<Label text="Arbitro de Compromisso" GridPane.columnSpan="2" GridPane.rowIndex="26">
-					<font>
-						<Font name="System Bold Italic" size="12.0" />
-					</font>
-					<GridPane.margin>
-						<Insets left="10.0" />
-					</GridPane.margin>
-				</Label>
-				<Label text="Nome:" GridPane.rowIndex="27" />
-				<Label text="Nacionalidade:" GridPane.rowIndex="28" />
-				<Label text="Estado Civil:" GridPane.rowIndex="29" />
-				<Label text="Profissão:" GridPane.rowIndex="30" />
-				<Label text="RG:" GridPane.rowIndex="31" />
-				<Label text="CPF:" GridPane.rowIndex="32" />
-				<Label text="Arbitro de Audiência" GridPane.columnSpan="2" GridPane.rowIndex="33">
-					<font>
-						<Font name="System Bold Italic" size="12.0" />
-					</font>
-					<GridPane.margin>
-						<Insets left="10.0" />
-					</GridPane.margin>
-				</Label>
-				<Label text="Nome:" GridPane.rowIndex="34" />
-				<Label text="Nacionalidade:" GridPane.rowIndex="35" />
-				<Label text="Estado Civil:" GridPane.rowIndex="36" />
-				<Label text="Profissão:" GridPane.rowIndex="37" />
-				<Label text="RG:" GridPane.rowIndex="38" />
-				<Label text="CPF:" GridPane.rowIndex="39" />
-				<Label text="Data:" GridPane.rowIndex="40" />
-				<Label text="Acordo:" GridPane.rowIndex="41">
-					<font>
-						<Font name="System Bold Italic" size="12.0" />
-					</font>
-					<GridPane.margin>
-						<Insets left="10.0" />
-					</GridPane.margin>
-				</Label>
-				<TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="42" />
-            <TextField fx:id="dteNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <TextField fx:id="dteEnd" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <TextField fx:id="dteCEP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <TextField fx:id="dteBai" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
-            <TextField fx:id="dteCid" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label text="/" GridPane.columnIndex="2" GridPane.rowIndex="5">
-               <GridPane.margin>
-                  <Insets left="10.0" />
-               </GridPane.margin>
-            </Label>
-            <TextField fx:id="dteUF" GridPane.columnIndex="2" GridPane.rowIndex="5">
-               <GridPane.margin>
-                  <Insets left="20.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField fx:id="dteID" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <CheckBox fx:id="opCPF" mnemonicParsing="false" text="CPF" GridPane.columnIndex="2" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets left="10.0" />
-               </GridPane.margin>
-            </CheckBox>
-            <CheckBox fx:id="opCNPJ" mnemonicParsing="false" text="CNPJ" GridPane.columnIndex="2" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets left="60.0" />
-               </GridPane.margin>
-            </CheckBox>
-            <TextField fx:id="dteRep" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-            <TextField fx:id="dteNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8" />
-            <TextField fx:id="dteNat" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
-            <ChoiceBox fx:id="dteEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <TextField fx:id="dteRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11" />
-            <TextField fx:id="dteCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12" />
-            <TextField fx:id="dteTel" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="13" />
-            <TextField fx:id="ddoNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="15" />
-            <TextField fx:id="ddoNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="16" />
-            <TextField fx:id="ddoNat" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="17" />
-            <ComboBox fx:id="ddoEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
-            <TextField fx:id="ddoProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="19" />
-            <TextField fx:id="ddoRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="20" />
-            <TextField fx:id="ddoCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="21" />
-            <TextField fx:id="ddoEnd" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="22" />
-            <TextField fx:id="ddoCEP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="23" />
-            <TextField fx:id="ddoBai" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="24" />
-            <TextField fx:id="ddoTel" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="25" />
-            <TextField fx:id="acNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="27" />
-            <TextField fx:id="acNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="28" />
-            <ChoiceBox fx:id="acEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="29" />
-            <TextField fx:id="acProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="30" />
-            <TextField fx:id="acRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="31" />
-            <TextField fx:id="acCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="32" />
-            <TextField fx:id="aaNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="34" />
-            <TextField fx:id="aaNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="35" />
-            <ChoiceBox fx:id="aaEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="36" />
-            <TextField fx:id="aaProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="37" />
-            <TextField fx:id="aaRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="38" />
-            <TextField fx:id="aaCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="39" />
-            <DatePicker fx:id="audDate" GridPane.columnIndex="1" GridPane.rowIndex="40" />
-            <Button fx:id="btnSalvar" alignment="CENTER" contentDisplay="CENTER" minWidth="200.0" mnemonicParsing="false" text="Salvar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="43" />
-			</children>
-		</GridPane>
+      <ScrollPane prefHeight="400.0" prefWidth="565.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane maxWidth="550.0">
+               <children>
+            		<GridPane alignment="CENTER" maxWidth="530.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+            			<columnConstraints>
+            				<ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            				<ColumnConstraints hgrow="SOMETIMES" maxWidth="456.0" minWidth="10.0" prefWidth="311.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="456.0" minWidth="10.0" prefWidth="119.0" />
+            			</columnConstraints>
+            			<rowConstraints>
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            				<RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            			</rowConstraints>
+            			<children>
+            				<Label text="Demandante" GridPane.columnSpan="2">
+            					<font>
+            						<Font name="System Bold Italic" size="12.0" />
+            					</font>
+            					<GridPane.margin>
+            						<Insets left="10.0" />
+            					</GridPane.margin>
+            				</Label>
+            				<Label text="Nome:" GridPane.rowIndex="1" />
+            				<Label text="Endereço:" GridPane.rowIndex="2" />
+            				<Label text="CEP:" GridPane.rowIndex="3" />
+            				<Label text="Bairro:" GridPane.rowIndex="4" />
+            				<Label text="Cidade/UF:" GridPane.rowIndex="5" />
+            				<Label text="CPF/CNPJ:" GridPane.rowIndex="6" />
+            				<Label text="Representante:" GridPane.rowIndex="7" />
+            				<Label text="Nacionalidade:" GridPane.rowIndex="8" />
+            				<Label text="Naturalidade:" GridPane.rowIndex="9" />
+            				<Label text="Estado Civil:" GridPane.rowIndex="10" />
+            				<Label text="RG:" GridPane.rowIndex="11" />
+            				<Label text="CPF:" GridPane.rowIndex="12" />
+            				<Label text="Telefone:" GridPane.rowIndex="13" />
+            				<Label text="Demandado" GridPane.columnSpan="2" GridPane.rowIndex="14">
+            					<font>
+            						<Font name="System Bold Italic" size="12.0" />
+            					</font>
+            					<GridPane.margin>
+            						<Insets left="10.0" />
+            					</GridPane.margin>
+            				</Label>
+            				<Label text="Nome:" GridPane.rowIndex="15" />
+            				<Label text="Nacionalidade:" GridPane.rowIndex="16" />
+            				<Label text="Naturalidade:" GridPane.rowIndex="17" />
+            				<Label text="Estado Civil:" GridPane.rowIndex="18" />
+            				<Label text="Profisão:" GridPane.rowIndex="19" />
+            				<Label text="RG:" GridPane.rowIndex="20" />
+            				<Label text="CPF:" GridPane.rowIndex="21" />
+            				<Label text="Endereço:" GridPane.rowIndex="22" />
+            				<Label text="CEP:" GridPane.rowIndex="23" />
+            				<Label text="Bairro:" GridPane.rowIndex="24" />
+            				<Label text="Telefone:" GridPane.rowIndex="25" />
+            				<Label text="Arbitro de Compromisso" GridPane.columnSpan="2" GridPane.rowIndex="26">
+            					<font>
+            						<Font name="System Bold Italic" size="12.0" />
+            					</font>
+            					<GridPane.margin>
+            						<Insets left="10.0" />
+            					</GridPane.margin>
+            				</Label>
+            				<Label text="Nome:" GridPane.rowIndex="27" />
+            				<Label text="Nacionalidade:" GridPane.rowIndex="28" />
+            				<Label text="Estado Civil:" GridPane.rowIndex="29" />
+            				<Label text="Profissão:" GridPane.rowIndex="30" />
+            				<Label text="RG:" GridPane.rowIndex="31" />
+            				<Label text="CPF:" GridPane.rowIndex="32" />
+            				<Label text="Arbitro de Audiência" GridPane.columnSpan="2" GridPane.rowIndex="33">
+            					<font>
+            						<Font name="System Bold Italic" size="12.0" />
+            					</font>
+            					<GridPane.margin>
+            						<Insets left="10.0" />
+            					</GridPane.margin>
+            				</Label>
+            				<Label text="Nome:" GridPane.rowIndex="34" />
+            				<Label text="Nacionalidade:" GridPane.rowIndex="35" />
+            				<Label text="Estado Civil:" GridPane.rowIndex="36" />
+            				<Label text="Profissão:" GridPane.rowIndex="37" />
+            				<Label text="RG:" GridPane.rowIndex="38" />
+            				<Label text="CPF:" GridPane.rowIndex="39" />
+            				<Label text="Data:" GridPane.rowIndex="40" />
+            				<Label text="Acordo:" GridPane.rowIndex="41">
+            					<font>
+            						<Font name="System Bold Italic" size="12.0" />
+            					</font>
+            					<GridPane.margin>
+            						<Insets left="10.0" />
+            					</GridPane.margin>
+            				</Label>
+            			
+                        <TextField fx:id="dteNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="dteEnd" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="dteCEP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="dteBai" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="dteCid" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="/" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="dteUF" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="dteID" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <RadioButton fx:id="opCNPJ" mnemonicParsing="false" text="CNPJ" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="opCPF" mnemonicParsing="false" text="CPF" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets left="70.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <TextField fx:id="dteRep" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                        <TextField fx:id="dteNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                        <TextField fx:id="dteNat" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+                        <ChoiceBox fx:id="dteEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <TextField fx:id="dteRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+                        <TextField fx:id="dteCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12" />
+                        <TextField fx:id="dteTel" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="13" />
+                        <TextField fx:id="ddoNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="15" />
+                        <TextField fx:id="ddoNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+                        <TextField fx:id="ddoNat" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="17" />
+                        <ChoiceBox fx:id="ddoEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                        <TextField fx:id="ddoProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="19" />
+                        <TextField fx:id="ddoRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="20" />
+                        <TextField fx:id="ddoCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="21" />
+                        <TextField fx:id="ddoEnd" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="22" />
+                        <TextField fx:id="ddoCEP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="23" />
+                        <TextField fx:id="ddoBai" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="24" />
+                        <TextField fx:id="ddoTel" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="25" />
+                        <TextField fx:id="acNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="27" />
+                        <TextField fx:id="acNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="28" />
+                        <ChoiceBox fx:id="acEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="29" />
+                        <TextField fx:id="acProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="30" />
+                        <TextField fx:id="acRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="31" />
+                        <TextField fx:id="acCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="32" />
+                        <TextField fx:id="aaNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="34" />
+                        <TextField fx:id="aaNac" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="35" />
+                        <ChoiceBox fx:id="aaEC" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="36" />
+                        <TextField fx:id="aaProf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="37" />
+                        <TextField fx:id="aaRG" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="38" />
+                        <TextField fx:id="aaCPF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="39" />
+                        <DatePicker fx:id="audDate" GridPane.columnIndex="1" GridPane.rowIndex="40" />
+                        <TextArea GridPane.columnSpan="3" GridPane.rowIndex="42" />
+                        <Button fx:id="btnSalvar" alignment="CENTER" contentDisplay="CENTER" minWidth="200.0" mnemonicParsing="false" text="Salvar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="43" />
+                        
+            			</children>
+            		</GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
 	</children>
 </AnchorPane>

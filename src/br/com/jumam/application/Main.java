@@ -1,6 +1,8 @@
 package br.com.jumam.application;
 	
 
+
+import br.com.jumam.edita.EntryViewController;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -13,7 +15,9 @@ public class Main extends Application {
 	
 	public static Stage stageLogin;
 	public static Stage stageRoot;
+	public static Stage stageEntry;
 	private static BorderPane root;
+	private static BorderPane rootEntry;
 	
 	
 	@Override
@@ -68,8 +72,39 @@ public class Main extends Application {
 		}
 	}
 	
+	private static void entry() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("RootEntry.fxml"));
+			rootEntry = (BorderPane)loader.load();
+			Scene sceneEntry = new Scene(rootEntry,565,400);
+			stageEntry = new Stage();
+			stageEntry.setResizable(false);
+			stageEntry.setScene(sceneEntry);
+			stageEntry.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static void inserir() {
+		entry();
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(EntryViewController.class.getResource("EntryView.fxml"));
+			AnchorPane inserir = (AnchorPane)loader.load();
+			stageEntry.setTitle("Inserir");
+			rootEntry.setCenter(inserir);
+						
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
+
+	
 	
 }
