@@ -2,6 +2,7 @@ package br.com.jumam.application;
 	
 
 
+import br.com.jumam.edita.EditViewController;
 import br.com.jumam.edita.EntryViewController;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -108,7 +109,7 @@ public class Main extends Application {
 		try {
 			EditViewController controller = new EditViewController();
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(EntryViewController.class.getResource("EntryView.fxml"));
+			loader.setLocation(EditViewController.class.getResource("EntryView.fxml"));
 			loader.setController(controller);
 			AnchorPane inserir = (AnchorPane)loader.load();
 			stageEntry.setTitle("Inserir");

@@ -12,7 +12,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
-public class EditViewContorller {
+public class EditViewController {
 
 	 @FXML
 	 private ResourceBundle resources;
