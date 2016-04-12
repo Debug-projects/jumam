@@ -17,7 +17,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Processos">
             <items>
-              <MenuItem mnemonicParsing="false" text="Editar" />
+              <MenuItem mnemonicParsing="false" onAction="#handleCorrige" text="Editar" />
                   <MenuItem mnemonicParsing="false" text="Imprimir" />
             </items>
           </Menu>

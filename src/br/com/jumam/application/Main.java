@@ -87,6 +87,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
+
 	public static void inserir() {
 		entry();
 		try {
@@ -100,8 +101,7 @@ public class Main extends Application {
 						
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	
 	public static void corrigir() {
@@ -111,20 +111,16 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(EditViewController.class.getResource("EntryView.fxml"));
 			loader.setController(controller);
-			AnchorPane inserir = (AnchorPane)loader.load();
-			stageEntry.setTitle("Inserir");
-			rootEntry.setCenter(inserir);
+			AnchorPane corrigir = (AnchorPane)loader.load();
+			stageEntry.setTitle("Corrigir");
+			rootEntry.setCenter(corrigir);
 						
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public static void main(String[] args) {
 		launch(args);
 	}
-
-	
-	
 }

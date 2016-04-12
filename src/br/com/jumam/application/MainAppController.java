@@ -29,4 +29,9 @@ public class MainAppController {
     private void handleNovo(){
     	Main.inserir();
     }
+    
+    @FXML
+    private void handleCorrige(){
+    	Main.corrigir();
+    }
 }

@@ -2,8 +2,12 @@ package br.com.jumam.edita;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import br.com.jumam.application.Main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -193,16 +197,23 @@ public class EditViewController {
        				"Casado",
        				"Divorciado"
        				);
-       dteEC.setItems(options);
-       ddoEC.setItems(options);
-       aaEC.setItems(options);
-       acEC.setItems(options);
+        dteEC.setItems(options);
+        ddoEC.setItems(options);
+        aaEC.setItems(options);
+        acEC.setItems(options);
        
-       ToggleGroup grupo = new ToggleGroup();
-       opCNPJ.setToggleGroup(grupo);
-       opCNPJ.setSelected(true);
-       opCPF.setToggleGroup(grupo);
-   }
-	
-	    
+        ToggleGroup grupo = new ToggleGroup();
+        opCNPJ.setToggleGroup(grupo);
+        opCNPJ.setSelected(true);
+        opCPF.setToggleGroup(grupo);
+       
+        btnSalvar.setOnAction(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				Main.stageEntry.close();				
+			}        	
+        });
+    }
+		    
 }
