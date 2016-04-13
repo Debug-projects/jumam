@@ -43,7 +43,7 @@ public class EditViewController {
 	private TextField ddoCEP;
 
 	@FXML
-	private TextField dteID;
+	private TextField dteCNPJ;
 
 	@FXML
 	private TextField acNac;
@@ -155,7 +155,7 @@ public class EditViewController {
 	    assert acProf != null : "fx:id=\"acProf\" was not injected: check your FXML file 'EntryView.fxml'.";
 	    assert acNome != null : "fx:id=\"acNome\" was not injected: check your FXML file 'EntryView.fxml'.";
 	    assert ddoCEP != null : "fx:id=\"ddoCEP\" was not injected: check your FXML file 'EntryView.fxml'.";
-	    assert dteID != null : "fx:id=\"dteID\" was not injected: check your FXML file 'EntryView.fxml'.";
+	    assert dteCNPJ != null : "fx:id=\"dteID\" was not injected: check your FXML file 'EntryView.fxml'.";
 	    assert acNac != null : "fx:id=\"acNac\" was not injected: check your FXML file 'EntryView.fxml'.";
 	    assert dteNac != null : "fx:id=\"dteNac\" was not injected: check your FXML file 'EntryView.fxml'.";
 	    assert dteCEP != null : "fx:id=\"dteCEP\" was not injected: check your FXML file 'EntryView.fxml'.";

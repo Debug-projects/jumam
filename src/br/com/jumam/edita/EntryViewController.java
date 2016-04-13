@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
 public class EntryViewController {
+		
 	@FXML
 	private ResourceBundle resources;
 
@@ -41,7 +42,7 @@ public class EntryViewController {
 	private TextField ddoCEP;
 
 	@FXML
-	private TextField dteID;
+	private TextField dteCNPJ;
 
 	@FXML
 	private TextField acNac;
@@ -153,7 +154,7 @@ public class EntryViewController {
 		assert acProf != null : "fx:id=\"acProf\" was not injected: check your FXML file 'EntryView.fxml'.";
 		assert acNome != null : "fx:id=\"acNome\" was not injected: check your FXML file 'EntryView.fxml'.";
 		assert ddoCEP != null : "fx:id=\"ddoCEP\" was not injected: check your FXML file 'EntryView.fxml'.";
-		assert dteID != null : "fx:id=\"dteID\" was not injected: check your FXML file 'EntryView.fxml'.";
+		assert dteCNPJ != null : "fx:id=\"dteID\" was not injected: check your FXML file 'EntryView.fxml'.";
 		assert acNac != null : "fx:id=\"acNac\" was not injected: check your FXML file 'EntryView.fxml'.";
 		assert dteNac != null : "fx:id=\"dteNac\" was not injected: check your FXML file 'EntryView.fxml'.";
 		assert dteCEP != null : "fx:id=\"dteCEP\" was not injected: check your FXML file 'EntryView.fxml'.";
@@ -208,5 +209,5 @@ public class EntryViewController {
 			}
 		});
 	}
-
+	
 }
